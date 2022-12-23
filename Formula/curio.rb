@@ -12,7 +12,7 @@ class Curio < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Bearer/curio/releases/download/v0.21.0/curio_0.21.0_darwin_arm64.tar.gz"
-      sha256 "55f5193e30b650623aa571cc34e1264132ef4fd72942a60821df2e6d5618d817"
+      sha256 "d76f862cbe1ef1a9df029d0358b05931b1c0ff67c9193a17496610ae4645c546"
 
       def install
         bin.install "curio"
@@ -20,7 +20,7 @@ class Curio < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/Bearer/curio/releases/download/v0.21.0/curio_0.21.0_darwin_amd64.tar.gz"
-      sha256 "ab49bac6f5fb363ff74ff1911161097b51682c900979a52ff1a5bc982683d808"
+      sha256 "ca9c550d2a48b1eb3dffbcb071304041d5a914613a2a28297650fe34f97faaf2"
 
       def install
         bin.install "curio"
