@@ -5,21 +5,21 @@
 class Curio < Formula
   desc "A data-first security scanner that finds risks and vulnerabilities in your code so you can protect sensitive data (PHI, PD, PII)."
   homepage "https://curio.sh"
-  version "0.23.0"
+  version "0.24.0"
   license "Elastic License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Bearer/curio/releases/download/v0.23.0/curio_0.23.0_darwin_arm64.tar.gz"
-      sha256 "8da22319025ef65166fec49d8edbdcad02a7597690f0bfca48ed450fa0833f33"
+      url "https://github.com/Bearer/curio/releases/download/v0.24.0/curio_0.24.0_darwin_arm64.tar.gz"
+      sha256 "fe8070de4f255e377cc92c3950bb072011b524c3fc156b1552281d551242f1c5"
 
       def install
         bin.install "curio"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Bearer/curio/releases/download/v0.23.0/curio_0.23.0_darwin_amd64.tar.gz"
-      sha256 "48d8d8d0eab19f379aa83f2516480b2e2ada0a0363a74c7bd424c8c7061ba171"
+      url "https://github.com/Bearer/curio/releases/download/v0.24.0/curio_0.24.0_darwin_amd64.tar.gz"
+      sha256 "57ab217f227fb307dc29c41a60c900dfc876ed97202a809a02af65e1ddd9b2b9"
 
       def install
         bin.install "curio"
@@ -29,8 +29,8 @@ class Curio < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Bearer/curio/releases/download/v0.23.0/curio_0.23.0_linux_amd64.tar.gz"
-      sha256 "53e26263b83c7579bca69f76757333a06c0726feeb91febea08f68544f7827d8"
+      url "https://github.com/Bearer/curio/releases/download/v0.24.0/curio_0.24.0_linux_amd64.tar.gz"
+      sha256 "4173eb7ea2e9494853061460faa3f4f10c6525c3d32e98066cac83430744ea6a"
 
       def install
         bin.install "curio"
