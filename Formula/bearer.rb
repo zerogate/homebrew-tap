@@ -5,21 +5,21 @@
 class Bearer < Formula
   desc "A data-first security scanner that finds risks and vulnerabilities in your code so you can protect sensitive data (PHI, PD, PII)."
   homepage "https://bearer.com"
-  version "1.17.0"
+  version "1.18.0"
   license "Elastic License 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Bearer/bearer/releases/download/v1.17.0/bearer_1.17.0_darwin_arm64.tar.gz"
-      sha256 "3db931bb4fb1db906bff9778d03529e4acb3ddf98c6b46b173905eb0b642ee57"
+      url "https://github.com/Bearer/bearer/releases/download/v1.18.0/bearer_1.18.0_darwin_arm64.tar.gz"
+      sha256 "a781d9bad6ca54d798004e5caf3c278a4b8bb7da8da0fad571e907b3971ada32"
 
       def install
         bin.install "bearer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Bearer/bearer/releases/download/v1.17.0/bearer_1.17.0_darwin_amd64.tar.gz"
-      sha256 "ebc3db4481ea92f3ea76801e6f8e81239d8bdc9d4adfe2d888d796254727e70b"
+      url "https://github.com/Bearer/bearer/releases/download/v1.18.0/bearer_1.18.0_darwin_amd64.tar.gz"
+      sha256 "1bc011f25660b4c46c71c076d1a1b30d371323e16946868d3365a9a35a490bcb"
 
       def install
         bin.install "bearer"
@@ -29,8 +29,8 @@ class Bearer < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Bearer/bearer/releases/download/v1.17.0/bearer_1.17.0_linux_amd64.tar.gz"
-      sha256 "cd6f26a70ef9e543a273e919effb67c9b6da6dfa301155122fc0db2d5ad686d3"
+      url "https://github.com/Bearer/bearer/releases/download/v1.18.0/bearer_1.18.0_linux_amd64.tar.gz"
+      sha256 "b0f900e6ca8460d261b09cc8812a07867762cc2cbb65238811b31a8bbcd15d04"
 
       def install
         bin.install "bearer"
