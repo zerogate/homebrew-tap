@@ -5,12 +5,12 @@
 class Gon < Formula
   desc "Sign, notarize, and package macOS CLI applications written in any language."
   homepage ""
-  version "0.0.26"
+  version "0.0.27"
   depends_on :macos
 
   on_macos do
-    url "https://github.com/Bearer/gon/releases/download/v0.0.26/gon_macos.zip"
-    sha256 "390b4c315e596092107fa6a645dbda1e61361d59e85a35a5a13b27783923eb23"
+    url "https://github.com/Bearer/gon/releases/download/v0.0.27/gon_macos.zip"
+    sha256 "ee825cff23c5a3c81f1ed1c839548e002d62c1b88fe8fd5dad8280d752f5268a"
 
     def install
       bin.install "gon"
