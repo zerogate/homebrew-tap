@@ -5,23 +5,23 @@
 class Bearer < Formula
   desc "A data-first security scanner that finds risks and vulnerabilities in your code so you can protect sensitive data (PHI, PD, PII)."
   homepage "https://bearer.com"
-  version "1.43.4"
+  version "1.43.5"
   license "Elastic License 2.0"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Bearer/bearer/releases/download/v1.43.4/bearer_1.43.4_darwin_amd64.tar.gz"
-      sha256 "6a133a24e852e0892cedd0d7f474bf18e482e2777742f3d34378a99964105aa6"
+      url "https://github.com/Bearer/bearer/releases/download/v1.43.5/bearer_1.43.5_darwin_amd64.tar.gz"
+      sha256 "6d68d83d636d37596b7b44248ca8516c94aa330aef4af4e83c9f0f65e062a177"
 
       def install
         bin.install "bearer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Bearer/bearer/releases/download/v1.43.4/bearer_1.43.4_darwin_arm64.tar.gz"
-      sha256 "e62024aac5716bfd08716630f5087f324e2491d12d1ec86739669cadedfdceec"
+      url "https://github.com/Bearer/bearer/releases/download/v1.43.5/bearer_1.43.5_darwin_arm64.tar.gz"
+      sha256 "9f5ada3e25b85c24fef6910bd9d5225752d72e4eb57b8db8a3771061eda35a76"
 
       def install
         bin.install "bearer"
@@ -31,8 +31,16 @@ class Bearer < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Bearer/bearer/releases/download/v1.43.4/bearer_1.43.4_linux_amd64.tar.gz"
-      sha256 "2d18d13d3107ff4e0fe884ba102b06fabb36736531340dbc0a2fd22081f0ff37"
+      url "https://github.com/Bearer/bearer/releases/download/v1.43.5/bearer_1.43.5_linux_amd64.tar.gz"
+      sha256 "becf2a54ff403e98e3273ebb188f5c2e9ef32626d26696eed2948efb361349cb"
+
+      def install
+        bin.install "bearer"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Bearer/bearer/releases/download/v1.43.5/bearer_1.43.5_linux_arm64.tar.gz"
+      sha256 "b23b3517d57df379db123edd83f93ed5cb36d5fc97ba32709c971073090009ea"
 
       def install
         bin.install "bearer"
