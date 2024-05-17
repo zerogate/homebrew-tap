@@ -5,25 +5,23 @@
 class Gon < Formula
   desc "Sign, notarize, and package macOS CLI applications written in any language."
   homepage ""
-  version "0.0.36"
+  version "0.0.37"
   depends_on :macos
 
-  on_macos do
-    url "https://github.com/Bearer/gon/releases/download/v0.0.36/gon_macos.zip"
-    sha256 "a21792fa5d7dc0a443b5a3af2c3f3deecb60210b294bb93c4cddb577879039ba"
+  url "https://github.com/Bearer/gon/releases/download/v0.0.37/gon_macos.zip"
+  sha256 "2c5fbd2368f8ead818113c6fca3f6d7b78f5eafcf0160d412482209484d52c1a"
 
-    def install
-      bin.install "gon"
-    end
+  def install
+    bin.install "gon"
+  end
 
-    if Hardware::CPU.arm?
-      def caveats
-        <<~EOS
-          The darwin_arm64 architecture is not supported for the Gon
-          formula at this time. The darwin_amd64 binary may work in compatibility
-          mode, but it might not be fully supported.
-        EOS
-      end
+  on_arm do
+    def caveats
+      <<~EOS
+        The darwin_arm64 architecture is not supported for the Gon
+        formula at this time. The darwin_amd64 binary may work in compatibility
+        mode, but it might not be fully supported.
+      EOS
     end
   end
 end
