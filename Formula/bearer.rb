@@ -5,23 +5,23 @@
 class Bearer < Formula
   desc "A data-first security scanner that finds risks and vulnerabilities in your code so you can protect sensitive data (PHI, PD, PII)."
   homepage "https://bearer.com"
-  version "1.43.8"
+  version "1.44.0"
   license "Elastic License 2.0"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Bearer/bearer/releases/download/v1.43.8/bearer_1.43.8_darwin_amd64.tar.gz"
-      sha256 "92f78d18455f68e56f421934a1327440564527ec12ca471b095b0b2f7e232f09"
+      url "https://github.com/Bearer/bearer/releases/download/v1.44.0/bearer_1.44.0_darwin_amd64.tar.gz"
+      sha256 "a7e805af1e62253ed08309accfc90755c707431ceec8d6453452194f0beea510"
 
       def install
         bin.install "bearer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Bearer/bearer/releases/download/v1.43.8/bearer_1.43.8_darwin_arm64.tar.gz"
-      sha256 "20e2cb0c10c26e7633af20f56ccd7cd57a20396a3bd5e0521bc34f9f931498e8"
+      url "https://github.com/Bearer/bearer/releases/download/v1.44.0/bearer_1.44.0_darwin_arm64.tar.gz"
+      sha256 "96fb33981803a854a84ca92721ebfe0c394cc5da68559ac26c575fd373f1e827"
 
       def install
         bin.install "bearer"
@@ -31,16 +31,16 @@ class Bearer < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Bearer/bearer/releases/download/v1.43.8/bearer_1.43.8_linux_amd64.tar.gz"
-      sha256 "71d565de41b7a09b3e598e49fcf04089a11385a4fd8e6035d2ff52c74a4b69d3"
+      url "https://github.com/Bearer/bearer/releases/download/v1.44.0/bearer_1.44.0_linux_amd64.tar.gz"
+      sha256 "fd2bbd06203c0c8f1f3c9f001c7ceab9959b7eb41fb65d4edd19fd824beada11"
 
       def install
         bin.install "bearer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bearer/bearer/releases/download/v1.43.8/bearer_1.43.8_linux_arm64.tar.gz"
-      sha256 "e9782b7e860a8b71bbc36b8220eb841118a4d88c0645a38f508e98736f536cdb"
+      url "https://github.com/Bearer/bearer/releases/download/v1.44.0/bearer_1.44.0_linux_arm64.tar.gz"
+      sha256 "6743188da3821d7b945e5adbb5833780dd5e2479130ab8fec0a2397de799c47e"
 
       def install
         bin.install "bearer"
