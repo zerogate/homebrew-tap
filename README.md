@@ -1,9 +1,9 @@
-# Homebrew Tap for bearer
+# Homebrew Tap for ZeroGate
 
-This repository is a Homebrew Tap for [bearer](https://github.com/Bearer/bearer).
+This repository is a Homebrew Tap for [Gon](https://github.com/zerogate/gon).
 
 ## How do I install this formulae?
 
-`brew install Bearer/tap/bearer`
+`brew install zerogate/tap/gon`
 
-Or `brew tap Bearer/tap` and then `brew install bearer`.
+Or `brew tap zerogate/tap` and then `brew install gon`.
